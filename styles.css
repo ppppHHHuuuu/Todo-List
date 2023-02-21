@@ -1,0 +1,83 @@
+body {
+    margin: 100px ;
+    padding: 20px 30px;
+    border-top:    1px solid  black;
+    border-right:   1px solid  black;
+    border-bottom:   1px solid  black;
+    border-left:    1px solid  black;
+}
+
+.container {
+    display:flex;
+}
+
+.leftSide {
+
+    position: relative;
+    border: solid #009999 8px;
+    min-width: 30%;
+    color:rgb(134, 39, 39);
+}
+.leftSide .normalLabel .inbox{
+    display: flex;
+    align-items: center;
+}
+.leftSide .normalLabel  .inbox i {
+
+}
+
+.leftSide .normalLabel .today{ 
+    display: flex;
+    align-items: center;
+}
+
+
+.leftSide #favorites {
+    max-height:auto;
+    overflow: hidden;
+}
+
+.leftSide #favorites.open {
+    height:10px;
+
+} 
+.leftSide #favorites .highestPriority {
+    display: flex;
+    align-items: center;
+} 
+.leftSide #favorites .highestPriority img{
+    width: 1em;
+    height: 1em;
+}
+.leftSide #favorites .recurringWork {
+    display: flex;
+    align-items: center;
+}
+
+.leftSide #favorites .recurringWork img{
+    width: 1em;
+    height: 1em;
+}
+
+.leftSide #favorites .calendar {
+    display: flex;
+    align-items: center;
+}
+
+.leftSide #favorites .calendar img {
+    width: 1em;
+    height: 1em;
+}
+
+.projectsButton, .personalButton, .home, .family, .book, .workButton, .client {
+    display:flex;
+    justify-content: space-between;
+}
+
+
+.rightSide{
+    position:relative;
+    border: solid #648b8b 8px;
+    color:rgb(0, 0, 0);
+    width: 70%;
+}

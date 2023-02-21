@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ToDoList</title>
+    
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/294b6912fa.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<section class="container">
+    <div class="leftSide">
+        <div class="note"></div>
+        <div class="normalLabel">
+            <div class="inbox">
+                <div class="image">
+                    <i class="fa-solid fa-inbox"></i>
+                </div>
+                <p>inbox</p>
+            </div>
+        
+            <div class="today">
+                <div class="image">
+                    <i class="fa-solid fa-calendar"></i>
+                </div>
+                <p>today</p>
+                <p class="goright">5</p>
+            </div>
+        </div>
+
+        
+        <button id="favoritesButton">Favorites</button>
+        <div id="favorites">
+            <div class="highestPriority">
+                <img src="img/siren.png" alt="siren">
+                <p>Highest priority work</p>
+            </div>
+            <div class="recurringWork">
+                <img src="img/alarm.png" alt="alarm">
+                <p>My recurring work</p>
+            </div>
+
+            <div class="calendar">
+                <img src="img/calendar.png" alt="calendar">
+                <p>Calendar</p>
+            </div>
+        </div>
+
+
+        <div class="projectsButton">
+            <p id="projectsButton">Projects</p>
+            <p class="goright">5</p>
+        </div>
+        <div id="projects">
+            <div class="personalButton">
+                <p class="personalButton">Personal</p>
+                <p class="goright">5</p>
+            </div>    
+            <div class="home">
+                <!-- need dot -->
+                <p>Home</p>
+                <p class="goright">5</p>
+            </div>
+        
+            <div class="family">
+                <!-- need dot -->
+                <p>Family</p>
+                <p class="goright">5</p>
+            </div>
+
+            <div class="book">
+                <!-- need dot -->
+                <p>My First Book</p>
+                <p class="goright">5</p>
+            </div>
+
+            <div class="workButton">
+                <p id="workButton">Work</p>
+                <p class="goright">5</p>
+            </div>
+
+            <div class="client" id="new_website">
+                <p>Client - New Website</p>        
+            </div>
+            <div class="client" id="email_design">
+                <p>Client - Email Design</p>
+                <p class="goright">5</p>
+            </div>
+            <div class="client" id="rebrand">
+                <p> Client - Rebrand</p>
+                <p class="goright">5</p>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="rightSide">
+            <h2>Today</h2>
+            <br>
+            <input class="add_task" type="text" placeholder="task">
+            <input class="add_task_button" type="button" value="Add Task">
+
+            <ul class="task_list"></ul>        
+
+    </div>
+</section>
+<script src="app.js"></script>
+</body>
+</html>
