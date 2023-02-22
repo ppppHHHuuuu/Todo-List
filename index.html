@@ -21,11 +21,10 @@
             </div>
         
             <div class="today">
-                <div class="image">
                     <i class="fa-solid fa-calendar"></i>
-                </div>
+
                 <p>today</p>
-                <p class="goright">5</p>
+                <p class="goright" id="today_count">0</p>
             </div>
         </div>
 
@@ -48,63 +47,78 @@
         </div>
 
 
-        <div class="projectsButton">
+        <!-- <div class="projectsButton">
             <p id="projectsButton">Projects</p>
             <p class="goright">5</p>
-        </div>
+        </div> -->
         <div id="projects">
-            <div class="personalButton">
+            <button id="personalButton">
                 <p class="personalButton">Personal</p>
-                <p class="goright">5</p>
-            </div>    
-            <div class="home">
-                <!-- need dot -->
-                <p>Home</p>
-                <p class="goright">5</p>
-            </div>
-        
-            <div class="family">
-                <!-- need dot -->
-                <p>Family</p>
-                <p class="goright">5</p>
-            </div>
-
-            <div class="book">
-                <!-- need dot -->
-                <p>My First Book</p>
-                <p class="goright">5</p>
-            </div>
-
-            <div class="workButton">
-                <p id="workButton">Work</p>
-                <p class="goright">5</p>
-            </div>
-
-            <div class="client" id="new_website">
-                <p>Client - New Website</p>        
-            </div>
-            <div class="client" id="email_design">
-                <p>Client - Email Design</p>
-                <p class="goright">5</p>
-            </div>
-            <div class="client" id="rebrand">
-                <p> Client - Rebrand</p>
-                <p class="goright">5</p>
-            </div>
+            </button> 
+            <div id="personalSpace">   
+                <div class="home">
+                    <!-- need dot -->
+                    <i class="fa-solid fa-house"></i>
+                    <p>Home</p>
+                    <p class="goright" >5</p>
+                </div>
             
+                <div class="family">
+                    <!-- need dot -->
+                    <i class="fa-solid fa-people-roof"></i>
+                    <p>Family</p>
+                    <p class="goright">5</p>
+                </div>
+
+                <div class="book">
+                    <!-- need dot -->
+                    <i class="fa-solid fa-book"></i>
+                    <p>My First Book</p>
+                    <p class="goright">5</p>
+                </div>
+            </div>
+
+            
+
+            <button id="workButton">
+                <!-- <div class="black_toggle"></div> -->
+                <!-- <i class="fa-solid fa-briefcase"></i> -->
+                <p id="work">Work</p>
+                <!-- <p class="goright">5</p> -->
+            </button>
+            <div id="workSpace">
+                <div class="client" id="new_website">
+                    <i class="fa-solid fa-person-skating"></i>
+                    <p>Client - New Website</p>    
+                    <p class="goright">5</p>    
+                </div>
+                <div class="client" id="email_design">
+                    <i class="fa-solid fa-person-skating"></i>
+                    <p>Client - Email Design</p>
+                    <p class="goright">5</p>
+                </div>
+                <div class="client" id="rebrand">
+                    <i class="fa-solid fa-person-skating"></i>
+                    <p> Client - Rebrand</p>
+                    <p class="goright">5</p>
+                </div>
+            </div>
         </div>
     </div>
 
     <div class="rightSide">
-            <h2>Today</h2>
-            <br>
+        <h2>Today</h2>
+        <br>
+        
             <input class="add_task" type="text" placeholder="task">
-            <input class="add_task_button" type="button" value="Add Task">
-
-            <ul class="task_list"></ul>        
-
-    </div>
+            <input class="add_task_button" type="submit" value="Add Task">
+            <form>
+                <ul class="task_list">
+                    
+                </ul> 
+            </form>       
+        </div>
 </section>
-<script src="app.js"></script>
+<script  src="app.js" defer="defer"></script>
 </body>
 </html>

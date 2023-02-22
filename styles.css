@@ -1,5 +1,10 @@
+
+--root {
+    font-family: arial;
+
+}
 body {
-    margin: 100px ;
+    margin: 300px ;
     padding: 20px 30px;
     border-top:    1px solid  black;
     border-right:   1px solid  black;
@@ -15,6 +20,7 @@ body {
 
     position: relative;
     border: solid #009999 8px;
+    padding: 10px 40px;
     min-width: 30%;
     color:rgb(134, 39, 39);
 }
@@ -22,7 +28,7 @@ body {
     display: flex;
     align-items: center;
 }
-.leftSide .normalLabel  .inbox i {
+.leftSide .normalLabel .inbox i {
 
 }
 
@@ -31,6 +37,15 @@ body {
     align-items: center;
 }
 
+.leftSide #favoritesButton {
+    display: block;
+    min-height: 3rem;
+    width: 100%;
+    border-radius: 1.5rem;
+    background-color: transparent;
+    width: 80%;
+    margin: 0 auto;
+}
 
 .leftSide #favorites {
     max-height:auto;
@@ -39,7 +54,6 @@ body {
 
 .leftSide #favorites.open {
     height:10px;
-
 } 
 .leftSide #favorites .highestPriority {
     display: flex;
@@ -69,15 +83,79 @@ body {
     height: 1em;
 }
 
-.projectsButton, .personalButton, .home, .family, .book, .workButton, .client {
+.leftSide .projectsButton {
+    display: flex;
+    align-items: center;
+}
+
+.leftSide #personalButton {
+    display: block;
+    min-height: 3rem;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 1.4rem;
+    background-color: transparent;
+}
+
+.leftSide #personalSpace {
+    max-height: 10px;
+    overflow: hidden;
+}
+.leftSide #personalSpace.open {
+   max-height: 300px;
+}
+
+
+
+.leftSide #workButton {
+    display: block;
+    min-height: 3rem;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 1.4rem;
+    background-color: transparent;
+}
+.leftSide #workSpace {
+    max-height: 10px;
+    overflow: hidden;
+}
+.leftSide #workSpace.open {
+   max-height: 300px;
+   white-space: nowrap;
+}
+
+
+.today, .projectsButton, #personalButton, .home, .family, .book, .workButton, .client {
     display:flex;
+    align-items: center;
     justify-content: space-between;
 }
 
 
 .rightSide{
+    
     position:relative;
     border: solid #648b8b 8px;
-    color:rgb(0, 0, 0);
+    color:rgb(0, 0, 0);padding: 10px 40px;
     width: 70%;
+}
+
+
+.rightSide .add_task {
+    font-size: 24px;
+    border: 4px solid black;
+    border-radius: 1.1em;
+}
+.rightSide .add_task[type="text"] {
+    text-align: center;
+}
+.black_toggle {
+    color: white;
+    width: 0px;
+    height: 0px;
+    border: 10px solid black;
+    border-top-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: transparent;
+    border-left-color: black;
 }
